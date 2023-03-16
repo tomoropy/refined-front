@@ -1,7 +1,14 @@
-export default function Home() {
+import { NextPage } from 'next';
+import UsersList from '../components/UserLists';
+
+interface HomeProps {}
+
+const Home: NextPage<HomeProps> = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <UsersList />
+    </div>
   )
 }
+
+export default Home;
